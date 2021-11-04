@@ -1,0 +1,36 @@
+{
+  "//": "唯一标识，顺序标识",
+  "id": 100003,
+  "//": "租户地址",
+  "serviceId": ".*kong.k3.xxx.net/bdc/.*",
+  "//": "租户名称",
+  "name": "bdc",
+  "//": "分组名称",
+  "groupName": "bdc",
+  "//": "模板标识",
+  "theme": "bdc",
+  "//": "CAS服务地址",
+  "cas_url": "xxx",
+  "//": "登录地址端口",
+  "login_host": "xxx",
+  "visit_url": "xxx",
+  "description": "描述信息",
+  "callback_url": "第三步http代理返回地址",
+  "//": "用户信息展示的内容",
+  "userinfo": [
+    "id",
+    "username",
+    "realname",
+    "phone",
+    "email"
+  ],
+  "auth": "/**",
+  "filter": [
+    "/bdc/routes"
+  ],
+  "cookie_name": "NGXCAS",
+  "secret": "xxx",
+  "//": "客户端Session失效时间，单位秒",
+  "session_lifetime": 3600,
+  "tgt": "/opt/share/cookie/"
+}
